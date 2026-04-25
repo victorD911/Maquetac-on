@@ -1,7 +1,8 @@
-const FeatureItem = ({ title, text }) => {
+const FeatureItem = ({ title, text, iconClass }) => {
   return (
     <div className="feature-card">
       <div className="feature-icon-container">
+        <i className={iconClass} style={{ fontSize: '24px', color: '#fff' }}></i>
       </div>
       <h3 className="feature-card-title">{title}</h3>
       <p className="feature-card-text">{text}</p>
